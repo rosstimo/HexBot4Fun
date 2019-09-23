@@ -14,13 +14,13 @@ sleepSeconds = 1
 while True:
 
 	kit.servo[servoNum].angle = 0
-	time.sleep(sleepSeconds)
+	time.sleepsleepSeconds
 	kit.servo[servoNum].angle = 90
-	time.sleep(sleepSeconds)
+	time.sleepsleepSeconds
 	kit.servo[servoNum].angle = 180
-	time.sleep(sleepSeconds)
+	time.sleepsleepSeconds
 	kit.servo[servoNum].angle = 90
-	time.sleep(sleepSeconds)
+	time.sleepsleepSeconds
 
 
 #    kit.servo[0].actuation_range = 160

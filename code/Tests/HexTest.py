@@ -8,7 +8,7 @@ import time
 
 
 kit = ServoKit(channels=16)
-servoNum = 15
+servoNum = 1
 sleepSeconds = 1
 
 while True:
