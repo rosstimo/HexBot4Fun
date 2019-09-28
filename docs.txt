@@ -1,0 +1,43 @@
+Installed berryboot
+https://www.howtogeek.com/141325/how-to-multi-boot-your-raspberry-pi-with-berryboot/
+https://www.berryterminal.com/doku.php/berryboot#berryboot_v20_-_bootloaderuniversal_operating_system_installer
+Installed Raspbian stretch lite minimal - terminal only with berryboot setup
+sudo apt-get update
+sudo apt-get upgrade
+sudo raspi-config
+fix keyboard layout
+
+enable i2c
+sudo apt --fix-broken install (due to error messages)
+sudo apt-get install python-smbus
+sudo apt-get install i2c-tools
+
+sudo i2cdetect -y 1
+
+install circuit python libraries from adafruit
+https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+sudo apt-get install python3-pip
+sudo pip3 install --upgrade setuptools
+
+sudo pip3 install --upgrade setuptools
+If above doesn't work try
+sudo apt-get install python3-pip
+
+install samba to make dev easier
+https://www.howtogeek.com/176471/how-to-share-files-between-windows-and-linux/
+sudo apt-get install samba
+
+sudo smbpasswd -a pi
+PW: raspberry
+
+[HexBot4Fun] 
+path = /home/pi/HexBot4Fun
+available = yes 
+valid users = pi
+read only = no 
+browsable = yes 
+public = yes 
+writable = yes
+
+sudo service smbd restart
+\\192.168.0.253\HecBot4Funcd 
